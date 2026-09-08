@@ -118,11 +118,11 @@
         "rev": "936af24ba2fff16559bf38ebe59ff7bfbe6f0241",
         "revCount": 4,
         "type": "git",
-        "url": "ssh://git@github.com/nanobreaker/berkeley-mono.git"
+        "url": "ssh://git@github.com/thatwhichisdev/berkeley-mono.git"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/nanobreaker/berkeley-mono.git"
+        "url": "ssh://git@github.com/thatwhichisdev/berkeley-mono.git"
       }
     },
     "crane": {
@@ -369,11 +369,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788441008,
-        "narHash": "sha256-HXosrwmYwXrfz7hCaZR0aX2K6sGeRFme6OxVb92NhYI=",
+        "lastModified": 1788531395,
+        "narHash": "sha256-/p+yb7OSyzcv3rgNq8VDBtrwFCrm36KxtyN0ZKaeuHM=",
         "owner": "thatwhichisdev",
         "repo": "ghost-shell",
-        "rev": "7a65e7bd8c7d8363e73187855e2234061f186944",
+        "rev": "a1712b939f2e8ca764309330552f10486f3b7259",
         "type": "github"
       },
       "original": {
@@ -546,11 +546,11 @@
         "rev": "6aec4b9d946b8b975933344ec287fb9f74b6aa60",
         "revCount": 2,
         "type": "git",
-        "url": "ssh://git@github.com/nanobreaker/nix-assets.git"
+        "url": "ssh://git@github.com/thatwhichisdev/nix-assets.git"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@github.com/nanobreaker/nix-assets.git"
+        "url": "ssh://git@github.com/thatwhichisdev/nix-assets.git"
       }
     },
     "nixpkgs": {

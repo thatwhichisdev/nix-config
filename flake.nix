@@ -74,9 +74,9 @@
     treefmt-nix.url = "github:numtide/treefmt-nix";
     treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    berkeley-mono.url = "git+ssh://git@github.com/nanobreaker/berkeley-mono.git";
+    berkeley-mono.url = "git+ssh://git@github.com/thatwhichisdev/berkeley-mono.git";
 
-    nix-assets.url = "git+ssh://git@github.com/nanobreaker/nix-assets.git";
+    nix-assets.url = "git+ssh://git@github.com/thatwhichisdev/nix-assets.git";
 
     zed.url = "github:zed-industries/zed/v1.16.2";
   };

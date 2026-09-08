@@ -231,9 +231,9 @@
           ];
 
           binds = {
-            "Mod+D".action.spawn-sh = "noctalia msg panel-toggle launcher";
-            "Mod+N".action.spawn-sh = "noctalia msg panel-toggle clipboard";
-            "Mod+L".action.spawn-sh = "noctalia msg session lock";
+            "Mod+D".action.spawn-sh = "ghost-shell msg launcher toggle";
+            "Mod+Shift+D".action.spawn-sh = "ghost-shell msg finder toggle";
+            "Mod+L".action.spawn-sh = "ghost-shell msg session lock";
 
             "Mod+Return".action.spawn = "ghostty";
             "Mod+Q".action.close-window = { };
