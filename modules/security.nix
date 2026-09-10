@@ -1,6 +1,9 @@
 _: {
   security = {
-    polkit.enable = true;
+    polkit = {
+      enable = true;
+      enablePkexecWrapper = true;
+    };
     rtkit.enable = true;
     pam.loginLimits = [
       {
