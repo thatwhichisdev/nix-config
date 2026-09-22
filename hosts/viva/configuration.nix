@@ -40,6 +40,7 @@
     ../../modules/zen.nix
     ../../modules/zed.nix
     ../../modules/xdg.nix
+    ../../modules/swap.nix
   ];
 
   networking.hostName = "thatwhichisapple";
