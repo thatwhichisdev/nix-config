@@ -43,5 +43,6 @@ in
     ragenix
     postman
     fastpotify
+    codex
   ];
 }

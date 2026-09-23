@@ -74,6 +74,9 @@
     treefmt-nix.url = "github:numtide/treefmt-nix";
     treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
 
+    konnect.url = "github:mixelpixx/Konnect/v0.12.1";
+    konnect.inputs.nixpkgs.follows = "nixpkgs";
+
     berkeley-mono.url = "git+ssh://git@github.com/thatwhichisdev/berkeley-mono.git";
 
     nix-assets.url = "git+ssh://git@github.com/thatwhichisdev/nix-assets.git";
