@@ -369,11 +369,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790015279,
-        "narHash": "sha256-64btqLMElvrCHMmCKlZhoqBIcTrUGEd/Vy+07mqjm8w=",
+        "lastModified": 1790430722,
+        "narHash": "sha256-dZ8cpZgvvhmT9Nk5/3y7FWMJl42lrjwDMuhVw7rbl74=",
         "owner": "thatwhichisdev",
         "repo": "ghost-shell",
-        "rev": "497b1eb736afe8b95b4bc62e120afb4a0eebdbbb",
+        "rev": "5c8966e14caef13b656fa1601a3c339e1504d8d1",
         "type": "github"
       },
       "original": {
