@@ -199,34 +199,7 @@
                 }
               ];
 
-              geometry-corner-radius = {
-                top-left = 4.0;
-                top-right = 4.0;
-                bottom-left = 4.0;
-                bottom-right = 4.0;
-              };
-
               open-floating = true;
-
-              background-effect = {
-                blur = false;
-                xray = false;
-              };
-            }
-          ];
-
-          layer-rules = [
-            {
-              matches = [
-                {
-                  namespace = "^ghost-shell-bar$";
-                }
-              ];
-
-              background-effect = {
-                blur = true;
-                xray = true;
-              };
             }
           ];
 
