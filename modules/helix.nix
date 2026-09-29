@@ -29,6 +29,8 @@
     clang-tools
     panache
     harper
+    go
+    gopls
   ];
 
   home-manager.sharedModules = [
@@ -377,6 +379,24 @@
               command = "harper-ls";
               args = [ "--stdio" ];
             };
+            gopls = {
+              command = "gopls";
+
+              config = {
+                gofumpt = false;
+                staticcheck = true;
+                usePlaceholders = true;
+
+                hints = {
+                  assignVariableTypes = true;
+                  compositeLiteralFields = true;
+                  constantValues = true;
+                  functionTypeParameters = true;
+                  parameterNames = true;
+                  rangeVariableTypes = true;
+                };
+              };
+            };
           };
 
           language = [
@@ -466,6 +486,16 @@
               formatter.command = "nixfmt -";
               language-servers = [
                 "nil"
+              ];
+            }
+            {
+              name = "go";
+              auto-format = true;
+              formatter = {
+                command = "gofmt";
+              };
+              language-servers = [
+                "gopls"
               ];
             }
           ];

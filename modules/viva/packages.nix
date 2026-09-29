@@ -44,5 +44,6 @@ in
     postman
     fastpotify
     codex
+    element-desktop
   ];
 }

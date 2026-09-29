@@ -21,6 +21,7 @@ in
               output = "eDP-1";
               height = 27.0;
               exclusive_zone = 27.0;
+              blur = true;
             };
 
             "DP-1" = {
@@ -28,7 +29,18 @@ in
               height = 27.0;
               exclusive_zone = 27.0;
               primary = true;
+              blur = true;
             };
+          };
+
+          launcher = {
+            blur = true;
+            background_opacity = 0.8;
+          };
+
+          finder = {
+            blur = true;
+            background_opacity = 0.8;
           };
 
           clock = {
