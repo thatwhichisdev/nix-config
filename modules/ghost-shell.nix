@@ -21,15 +21,15 @@ in
               output = "eDP-1";
               height = 27.0;
               exclusive_zone = 27.0;
-              blur = true;
+              appearance = "transparent";
             };
 
             "DP-1" = {
+              primary = true;
               output = "DP-1";
               height = 27.0;
               exclusive_zone = 27.0;
-              primary = true;
-              blur = true;
+              appearance = "transparent";
             };
           };
 
