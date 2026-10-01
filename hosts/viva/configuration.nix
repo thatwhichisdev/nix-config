@@ -29,6 +29,7 @@
     ../../modules/security.nix
     ../../modules/ssh-agent.nix
     ../../modules/starship.nix
+    ../../modules/steam.nix
     ../../modules/stylix.nix
     ../../modules/swap.nix
     ../../modules/time.nix

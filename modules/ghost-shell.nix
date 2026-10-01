@@ -48,7 +48,7 @@ in
           };
 
           wallpaper = {
-            path = "${inputs.nix-assets.assets.wallpapers.motion.waneella-clouds}";
+            path = "${inputs.nix-assets.assets.wallpapers.motion.waneella-fiery}";
           };
 
           theme = {

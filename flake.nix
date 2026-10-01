@@ -81,6 +81,9 @@
 
     nix-assets.url = "git+ssh://git@github.com/thatwhichisdev/nix-assets.git";
 
+    steam-asahi.url = "github:thatwhichisdev/steam-asahi";
+    steam-asahi.inputs.nixpkgs.follows = "nixpkgs";
+
     zed.url = "github:zed-industries/zed/v1.16.2";
   };
 

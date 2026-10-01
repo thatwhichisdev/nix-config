@@ -565,11 +565,11 @@
         "nixpkgs": "nixpkgs_8"
       },
       "locked": {
-        "lastModified": 1777892659,
-        "narHash": "sha256-tH/kF1yGvEaPYYjXAIOYAbw0jhjWwsCFxhG2+yw2ZHA=",
+        "lastModified": 1790687379,
+        "narHash": "sha256-SzsXEX6cHwJRZZh8aVxRzkf1LXscfY/x1K4imQGB47Y=",
         "ref": "refs/heads/master",
-        "rev": "6aec4b9d946b8b975933344ec287fb9f74b6aa60",
-        "revCount": 2,
+        "rev": "31d6d4ba42b0cef52679e26724ba949075566059",
+        "revCount": 3,
         "type": "git",
         "url": "ssh://git@github.com/thatwhichisdev/nix-assets.git"
       },
@@ -847,6 +847,7 @@
         "nixpkgs": "nixpkgs_9",
         "nixpkgs-stable": "nixpkgs-stable_2",
         "noctalia": "noctalia",
+        "steam-asahi": "steam-asahi",
         "stylix": "stylix",
         "treefmt-nix": "treefmt-nix",
         "tuigreet": "tuigreet",
@@ -1049,6 +1050,26 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "steam-asahi": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790758184,
+        "narHash": "sha256-+ul0RTLG+z9VX3FIVHm5lDuvTLlXZYGFscKsvVeOokI=",
+        "owner": "thatwhichisdev",
+        "repo": "steam-asahi",
+        "rev": "423d5ba72e43a90331c190b8e493ce1d70ae115f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thatwhichisdev",
+        "repo": "steam-asahi",
         "type": "github"
       }
     },
