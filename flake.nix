@@ -68,7 +68,7 @@
 
     fastpotify.url = "github:mixedCase/fastpotify?ref=fix/nix-package-build";
 
-    tuigreet.url = "github:NotAShelf/tuigreet";
+    tuigreet.url = "github:tuigreet/tuigreet";
     tuigreet.inputs.nixpkgs.follows = "nixpkgs";
 
     treefmt-nix.url = "github:numtide/treefmt-nix";
