@@ -27,8 +27,10 @@ in
   programs.dconf.enable = true;
 
   home-manager.sharedModules = [
-    {
+    ({ config, ... }: {
       imports = [ inputs.stylix.homeModules.stylix ];
+
+      home.pointerCursor.enable = true;
 
       stylix = {
         enable = true;
@@ -60,7 +62,7 @@ in
           };
         };
       };
-    }
+    })
   ];
 
 }

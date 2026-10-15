@@ -1,4 +1,5 @@
-_: {
+{ config, ... }:
+{
   nix.settings = {
     warn-dirty = false;
 
@@ -17,7 +18,7 @@ _: {
   };
 
   nix.gc = {
-    automatic = true;
+    automatic = !config.programs.nh.clean.enable;
     dates = "weekly";
     options = "--delete-older-than 14d";
   };

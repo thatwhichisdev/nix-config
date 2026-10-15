@@ -59,8 +59,9 @@
 
     ghost-shell.url = "github:thatwhichisdev/ghost-shell";
     ghost-shell.inputs.nixpkgs.follows = "nixpkgs";
+    ghost-shell.inputs.fenix.follows = "fenix";
 
-    stylix.url = "github:nix-community/stylix/release-26.05";
+    stylix.url = "github:nix-community/stylix/master";
     stylix.inputs.nixpkgs.follows = "nixpkgs";
 
     zen-browser.url = "github:youwen5/zen-browser-flake";
