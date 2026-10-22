@@ -63,20 +63,5 @@ in
     inputs.apple-silicon.nixosModules.apple-silicon-support
   ];
 
-  nixpkgs.overlays = [
-    (_final: prev: {
-      uboot-asahi = prev.uboot-asahi.overrideAttrs (old: {
-        # Nixpkgs adapts these flags for its newer DTC, but Asahi U-Boot
-        # uses its bundled DTC, which still needs the original check name.
-        postPatch = (old.postPatch or "") + ''
-          for f in scripts/Makefile.lib dts/upstream/Makefile; do
-            substituteInPlace "$f" \
-              --replace-fail -Eno-node_name_not_empty -Wno-graph_child_address
-          done
-        '';
-      });
-    })
-  ];
-
   boot.kernelPackages = lib.mkForce (pkgs.linuxPackagesFor fairydustKernel);
 }
