@@ -31,6 +31,7 @@
     harper
     go
     gopls
+    uwu-colors
   ];
 
   home-manager.sharedModules = [
@@ -329,6 +330,9 @@
 
         languages = {
           language-server = {
+            uwu-colors = {
+              command = "${pkgs.uwu-colors}/bin/uwu_colors";
+            };
             rust-analyzer = {
               command = "rust-analyzer";
               config = {
@@ -403,7 +407,10 @@
             {
               name = "rust";
               auto-format = true;
-              language-servers = [ "rust-analyzer" ];
+              language-servers = [
+                "rust-analyzer"
+                "uwu-colors"
+              ];
             }
             {
               name = "java";
@@ -479,6 +486,9 @@
             {
               name = "toml";
               auto-format = true;
+              language-servers = [
+                "uwu-colors"
+              ];
             }
             {
               name = "nix";
@@ -486,6 +496,7 @@
               formatter.command = "nixfmt -";
               language-servers = [
                 "nil"
+                "uwu-colors"
               ];
             }
             {
