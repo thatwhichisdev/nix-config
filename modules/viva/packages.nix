@@ -46,5 +46,6 @@ in
     codex
     element-desktop
     fff-mcp
+    papirus-icon-theme
   ];
 }
