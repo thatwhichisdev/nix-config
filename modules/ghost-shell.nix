@@ -9,6 +9,7 @@
 
         settings = {
           general = {
+            theme = "Papirus-Dark";
             font_family = "Berkeley Mono";
             font_size = 13;
           };
@@ -31,13 +32,13 @@
           };
 
           launcher = {
-            blur = true;
-            background_opacity = 0.8;
+            blur = false;
+            background_opacity = 1.0;
           };
 
           finder = {
-            blur = true;
-            background_opacity = 0.8;
+            blur = false;
+            background_opacity = 1.0;
           };
 
           clock = {
