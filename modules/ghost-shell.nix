@@ -9,25 +9,34 @@
 
         settings = {
           general = {
-            theme = "Papirus-Dark";
             font_family = "Berkeley Mono";
-            font_size = 13;
+            font_size = 14;
           };
 
           bar = {
-            "eDP-1" = {
-              output = "eDP-1";
-              height = 32.0;
-              exclusive_zone = 32.0;
-              appearance = "transparent";
+            height = 36.0;
+            exclusive_zone = 36.0;
+
+            outputs = {
+              "eDP-1" = { };
+              "DP-1" = {
+                primary = true;
+              };
             };
 
-            "DP-1" = {
-              primary = true;
-              output = "DP-1";
-              height = 32.0;
-              exclusive_zone = 32.0;
-              appearance = "transparent";
+            decoration = {
+              layout = "islands";
+              opacity = 0.0;
+              blur = true;
+              radius = 4.0;
+            };
+
+            widgets = {
+              height = 26.0;
+              icon_size = 16.0;
+              padding_horizontal = 4.0;
+              margin_horizontal = 2.0;
+              margin_vertical = 4.0;
             };
           };
 
@@ -51,6 +60,7 @@
 
           theme = {
             mode = "dark";
+            icons = "Papirus-Dark";
 
             dark = {
               base00 = "#0a0c10";
