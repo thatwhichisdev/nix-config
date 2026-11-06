@@ -43,7 +43,6 @@ in
     ragenix
     postman
     fastpotify
-    codex
     element-desktop
     fff-mcp
     papirus-icon-theme
