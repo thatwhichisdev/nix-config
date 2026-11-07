@@ -812,6 +812,27 @@
         "type": "github"
       }
     },
+    "rededitor": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-stable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793993804,
+        "narHash": "sha256-BWIWDLi4geEJ7TpiG0QhCsHBRq9VOOqFLbjdDm3wapk=",
+        "owner": "codersauce",
+        "repo": "red",
+        "rev": "63bd293b4983e98db7886563fad5bde14405ba89",
+        "type": "github"
+      },
+      "original": {
+        "owner": "codersauce",
+        "ref": "main",
+        "repo": "red",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "apple-silicon": "apple-silicon",
@@ -829,6 +850,7 @@
         "nixpkgs": "nixpkgs_9",
         "nixpkgs-stable": "nixpkgs-stable_2",
         "noctalia": "noctalia",
+        "rededitor": "rededitor",
         "steam-asahi": "steam-asahi",
         "stylix": "stylix",
         "treefmt-nix": "treefmt-nix",

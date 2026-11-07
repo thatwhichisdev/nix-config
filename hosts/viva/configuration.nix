@@ -25,6 +25,7 @@
     ../../modules/nushell.nix
     ../../modules/pipewire.nix
     ../../modules/probe-rs-tools.nix
+    ../../modules/rededitor.nix
     ../../modules/rust.nix
     ../../modules/security.nix
     ../../modules/ssh-agent.nix

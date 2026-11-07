@@ -49,6 +49,9 @@
 
     helix.url = "github:helix-editor/helix";
 
+    rededitor.url = "github:codersauce/red/main";
+    rededitor.inputs.nixpkgs.follows = "nixpkgs-stable";
+
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 

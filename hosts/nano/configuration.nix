@@ -20,6 +20,7 @@
     ../../modules/nixpkgs.nix
     ../../modules/nushell.nix
     ../../modules/pipewire.nix
+    ../../modules/rededitor.nix
     ../../modules/rust.nix
     ../../modules/security.nix
     ../../modules/starship.nix
