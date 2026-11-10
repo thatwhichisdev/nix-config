@@ -73,4 +73,16 @@ in
   ];
 
   boot.kernelPackages = lib.mkForce (pkgs.linuxPackagesFor fairydustKernel);
+
+  hardware.asahi.avd = {
+    vaapi-support = true;
+    codecs = [ "all_free" ];
+  };
+
+  environment.sessionVariables = {
+    # Required for Firefox/Zen to access the decoder devices; disables its RDD sandbox.
+    MOZ_DISABLE_RDD_SANDBOX = "1";
+  };
+
+  environment.systemPackages = [ pkgs.libva-utils ];
 }

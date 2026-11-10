@@ -49,7 +49,6 @@ in
     element-desktop
     fff-mcp
     papirus-icon-theme
-    asahi-va-driver
     wl-screenrec
     libva
   ];
