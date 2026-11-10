@@ -40,6 +40,11 @@
 
     apple-silicon.url = "github:nix-community/nixos-apple-silicon";
 
+    bootvine = {
+      url = "git+https://codeberg.org/wvhulle/bootvine";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     awww.url = "git+https://codeberg.org/LGFae/awww";
 
     fenix.url = "github:nix-community/fenix";

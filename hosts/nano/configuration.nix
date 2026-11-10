@@ -2,6 +2,7 @@
 {
   imports = [
     ./hardware.nix
+    ../../modules/bootvine.nix
     ../../modules/awww.nix
     ../../modules/btop.nix
     ../../modules/docker.nix

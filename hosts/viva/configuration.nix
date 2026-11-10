@@ -5,6 +5,7 @@
 {
   imports = [
     ./hardware.nix
+    ../../modules/bootvine.nix
     ../../modules/btop.nix
     ../../modules/docker.nix
     ../../modules/fastfetch.nix
