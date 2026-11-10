@@ -40,6 +40,8 @@
 
     apple-silicon.url = "github:nix-community/nixos-apple-silicon";
 
+    iets.url = "github:numtide/iets";
+
     bootvine = {
       url = "git+https://codeberg.org/wvhulle/bootvine";
       inputs.nixpkgs.follows = "nixpkgs";

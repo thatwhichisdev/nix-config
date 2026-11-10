@@ -11,6 +11,7 @@
     ../../modules/git.nix
     ../../modules/helix.nix
     ../../modules/home-manager.nix
+    ../../modules/iets.nix
     ../../modules/java.nix
     ../../modules/localisation.nix
     ../../modules/nano/nh.nix

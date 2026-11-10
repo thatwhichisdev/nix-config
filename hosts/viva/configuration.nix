@@ -15,6 +15,7 @@
     ../../modules/git.nix
     ../../modules/helix.nix
     ../../modules/home-manager.nix
+    ../../modules/iets.nix
     ../../modules/java.nix
     ../../modules/kanshi.nix
     ../../modules/kicad.nix
