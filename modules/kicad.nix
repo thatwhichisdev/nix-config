@@ -7,7 +7,11 @@
 let
   system = pkgs.stdenv.hostPlatform.system;
 
-  konnect = inputs.konnect.packages.${system}.konnect;
+  # Konnect 0.12.1 expects bundled libraries, including AWS-LC.
+  # Keep that behavior until its package supports the new system-library hook.
+  konnect = inputs.konnect.packages.${system}.konnect.overrideAttrs {
+    dontCargoUseSystemLibs = true;
+  };
 
   konnectPlugin = pkgs.runCommand "konnect-kicad-plugin" { } ''
     mkdir -p "$out"

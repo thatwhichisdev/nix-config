@@ -18,17 +18,26 @@ let
       inherit stdenv lib;
 
       pname = "linux-asahi-fairydust";
-      version = "7.2.12";
+      version = "7.2.15";
       extraMeta.branch = "7.2";
 
       src = fetchFromGitHub {
         owner = "AsahiLinux";
         repo = "linux";
-        rev = "66764772c900c8fd3548324a72fe1c1dbd5d61ed";
-        hash = "sha256-AND8wc4aeHpxhiiSr7/LhigYwJ3sW4foU0in9PC3VxI=";
+        # AsahiLinux/linux fairydust branch, verified 2026-11-09.
+        rev = "432e09dca5d88e145eba6ff6080cd77aa5b8ccf8";
+        hash = "sha256-oB40IG6UgwgklAO8J09KY8/FPzF5nklvKvZe8A2/2Pg=";
       };
 
       kernelPatches = [
+        {
+          name = "tools-arm64-u128";
+          # The tools' private types header must match newer host UAPI headers.
+          patch = pkgs.fetchurl {
+            url = "https://github.com/torvalds/linux/commit/10a47fb67340bca274276faf855d7d460afd9a7a.patch";
+            hash = "sha256-MLRaNOAprujNVxIzAKg6sd/kc8tsiNh60bPMzYkeBkg=";
+          };
+        }
         {
           name = "Asahi config";
           patch = null;

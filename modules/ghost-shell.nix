@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 {
   home-manager.sharedModules = [
     inputs.ghost-shell.homeManagerModules.default
@@ -6,6 +6,10 @@
     {
       programs.ghost-shell = {
         enable = true;
+        # The upstream package still relies on bundled Rust native libraries.
+        package = inputs.ghost-shell.packages.${pkgs.stdenv.hostPlatform.system}.ghost-shell.overrideAttrs {
+          dontCargoUseSystemLibs = true;
+        };
 
         settings = {
           general = {

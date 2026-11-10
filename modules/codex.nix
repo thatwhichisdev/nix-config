@@ -1,13 +1,18 @@
 _: {
   home-manager.sharedModules = [
     (
-      { config, ... }:
+      { config, pkgs, ... }:
       let
         homeDir = config.home.homeDirectory;
       in
       {
         programs.codex = {
           enable = true;
+          # Codex 0.167.0 lacks inputs required by the new system-library hook.
+          # Keep its bundled libraries until nixpkgs migrates the package.
+          package = pkgs.codex.overrideAttrs {
+            dontCargoUseSystemLibs = true;
+          };
           mutableSettings = true;
 
           settings = {

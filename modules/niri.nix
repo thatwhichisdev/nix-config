@@ -110,7 +110,12 @@
           screenshot-path = "~/Screenshots/screenshot-%Y-%m-%d-%H-%M-%S.png";
 
           gestures = {
-            hot-corners.enable = false;
+            hot-corners = {
+              top-left = false;
+              top-right = false;
+              bottom-left = false;
+              bottom-right = false;
+            };
           };
 
           layout = {

@@ -1,5 +1,8 @@
 { pkgs, inputs, ... }:
 let
+  # Unstable Steel 0.8.3 crashes while installing its Scheme libraries on viva.
+  steel = inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.steel;
+
   fastpotify =
     inputs.fastpotify.packages.${pkgs.stdenv.hostPlatform.system}.fastpotify.overrideAttrs
       (old: {
@@ -46,5 +49,8 @@ in
     element-desktop
     fff-mcp
     papirus-icon-theme
+    asahi-va-driver
+    wl-screenrec
+    libva
   ];
 }

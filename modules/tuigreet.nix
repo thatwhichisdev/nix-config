@@ -1,10 +1,9 @@
 {
   pkgs,
-  inputs,
   ...
 }:
 let
-  tuigreet = inputs.tuigreet.packages.${pkgs.stdenv.hostPlatform.system}.tuigreet;
+  inherit (pkgs) tuigreet;
 in
 {
   environment.systemPackages = [

@@ -12,6 +12,7 @@
     {
       programs.nushell = {
         enable = true;
+        loadSessionVariables = false;
 
         environmentVariables = {
           EDITOR = "hx";
