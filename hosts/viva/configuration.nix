@@ -7,6 +7,7 @@
     ./hardware.nix
     ../../modules/bootvine.nix
     ../../modules/btop.nix
+    ../../modules/dash0.nix
     ../../modules/docker.nix
     ../../modules/fastfetch.nix
     ../../modules/fonts.nix

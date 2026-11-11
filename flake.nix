@@ -59,6 +59,9 @@
     rededitor.url = "github:codersauce/red/main";
     rededitor.inputs.nixpkgs.follows = "nixpkgs-stable";
 
+    dash0-cli.url = "github:dash0hq/dash0-cli";
+    dash0-cli.inputs.nixpkgs.follows = "nixpkgs";
+
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 

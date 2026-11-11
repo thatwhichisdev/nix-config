@@ -5,6 +5,7 @@
     ../../modules/bootvine.nix
     ../../modules/awww.nix
     ../../modules/btop.nix
+    ../../modules/dash0.nix
     ../../modules/docker.nix
     ../../modules/fonts.nix
     ../../modules/ghostty.nix
